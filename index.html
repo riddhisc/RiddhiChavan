@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <!-- main style -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <style>
+    html, body {
+        scroll-behavior: smooth;
+    }
+    
+    .main-nav li a {
+        position: relative;
+        transition: color 0.3s ease;
+    }
+    
+    .main-nav li a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        background-color: var(--primary-color);
+        transition: width 0.3s ease;
+    }
+    
+    .main-nav li a:hover::after {
+        width: 100%;
+    }
+    
+    .main-nav li a.active::after {
+        width: 100%;
+    }
+    
+    .section {
+        will-change: transform;
+    }
+  </style>
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">
+
+            <div class="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar">
+            </div>
+
+        </div>
+    </div>
+    <!-- ./Preloader -->
+    
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    </div>
+    <!-- ./Scroll Progress Indicator -->
+    
+    <!-- header -->
+
+    <header class="navbar-fixed-top">
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#about" style="font-weight: 500; font-size: 17px; letter-spacing: 0.5px;">ABOUT</a></li>
+                <li><a href="#projects" style="font-weight: 500; font-size: 17px; letter-spacing: 0.5px;">PROJECTS</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="themeToggle" aria-label="Toggle dark/light mode">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- ./header -->
+    
+    
+    <!-- about -->
+    <div class="section" id="about">
+        <div class="container">
+            <div class="col-md-6" data-aos="fade-up">
+                <h4>01</h4>
+                <h1 class="size-50">Know <br /> About me</h1>
+                <div class="h-50"></div>
+                <p><b>Hello there!</b> I'm Riddhi, an experienced Software Engineer specializing in frontend development with a passion for creating responsive and user-friendly web applications. Proficient in modern JavaScript frameworks and libraries including React, Next.js, and various frontend technologies. Skilled in writing clean, maintainable code with a strong focus on performance optimization and accessibility. Eager to contribute my technical expertise to innovative projects that deliver exceptional user experiences.</p>
+                
+                <div class="social-icons">
+                    <a href="https://github.com/riddhisc" target="_blank" class="social-icon">
+                        <div class="icon-circle">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/riddhichavan7/" target="_blank" class="social-icon">
+                        <div class="icon-circle">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </div>
+                    </a>
+                    <a href="RiddhiChavan_Resume.pdf" download target="_blank" class="download-btn">
+                        <ion-icon name="download-outline"></ion-icon> Download Resume
+                    </a>
+                </div>
+                
+                <div class="h-50"></div> <img src="img/Signature.png" width="230" alt="" />
+                <div class="h-50"></div>
+            </div>
+            <div class="col-md-6 about-img-div">
+                <div class="about-border" data-aos="fade-up" data-aos-delay=".5"></div>
+                <img src="img/about-img.jpg" width="400" class="img-responsive" alt="" align="right" data-aos="fade-right" data-aos-delay="0" />
+            </div>
+        </div>
+    </div>
+    <!-- ./about -->
+    
+    <!-- skills -->
+    <div class="section" id="skills">
+        <div class="container">
+            <div class="col-md-12" data-aos="fade-up">
+                <h4>02</h4>
+                <h1 class="size-50">Skills & Expertise</h1>
+                <div class="h-50"></div>
+                
+                <div class="skill-section">
+                    <h3 class="skill-category">Frontend Development & Design</h3>
+                    <div class="row skill-row">
+                        <div class="col-md-2 col-sm-4 col-xs-6 skill-item">
+                            <div class="skill-box">
+                                <span class="skill-icon">⚡</span>
+                                <span class="skill-name">HTML</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 skill-item">
+                            <div class="skill-box">
+                                <span class="skill-icon">🎨</span>
+                                <span class="skill-name">CSS</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 skill-item">
+                            <div class="skill-box">
+                                <span class="skill-icon">JS</span>
+                                <span class="skill-name">JS/TS</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 skill-item">
+                            <div class="skill-box">
+                                <span class="skill-icon">🌊</span>
+                                <span class="skill-name">Tailwind</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 skill-item">
+                            <div class="skill-box">
+                                <span class="skill-icon">⚛️</span>
+                                <span class="skill-name">React - RN</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 skill-item">
+                            <div class="skill-box">
+                                <span class="skill-icon">N</span>
+                                <span class="skill-name">NEXT.JS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row skill-row">
+                        <div class="col-md-2 col-sm-4 col-xs-6 skill-item">
+                            <div class="skill-box">
+                                <span class="skill-icon">F</span>
+                                <span class="skill-name">Figma</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 skill-item">
+                            <div class="skill-box">
+                                <span class="skill-icon">Ps</span>
+                                <span class="skill-name">Photoshop</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 skill-item">
+                            <div class="skill-box">
+                                <span class="skill-icon">Fr</span>
+                                <span class="skill-name">Framer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="h-50"></div>
+                
+                <div class="skill-section">
+                    <h3 class="skill-category">Backend Development, Cloud & General</h3>
+                    <div class="row skill-row">
+                        <div class="col-md-2 col-sm-4 col-xs-6 skill-item">
+                            <div class="skill-box">
+                                <span class="skill-icon">🐍</span>
+                                <span class="skill-name">Python</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 skill-item">
+                            <div class="skill-box">
+                                <span class="skill-icon">☕</span>
+                                <span class="skill-name">Java</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 skill-item">
+                            <div class="skill-box">
+                                <span class="skill-icon">Dj</span>
+                                <span class="skill-name">Django</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 skill-item">
+                            <div class="skill-box">
+                                <span class="skill-icon">🍃</span>
+                                <span class="skill-name">Spring</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 skill-item">
+                            <div class="skill-box">
+                                <span class="skill-icon">🐳</span>
+                                <span class="skill-name">Docker</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 skill-item">
+                            <div class="skill-box">
+                                <span class="skill-icon">☁️</span>
+                                <span class="skill-name">AWS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row skill-row">
+                        <div class="col-md-2 col-sm-4 col-xs-6 skill-item">
+                            <div class="skill-box">
+                                <span class="skill-icon">🐘</span>
+                                <span class="skill-name">PostgreSQL</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 skill-item">
+                            <div class="skill-box">
+                                <span class="skill-icon">SQL</span>
+                                <span class="skill-name">MySQL</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 skill-item">
+                            <div class="skill-box">
+                                <span class="skill-icon">🔥</span>
+                                <span class="skill-name">Github</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ./skills -->
+    
+    <!-- experience -->
+    <div class="section" id="experience">
+        <div class="container">
+            <div class="col-md-12">
+                <h4>03</h4>
+                <h1 class="size-50">Work & Experience</h1>
+                <div class="h-50"></div>
+            </div>
+            <div class="col-md-12">
+                <ul class="timeline">
+                    <li class="timeline-event">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">September 2022 - Present</p>
+                            <h3>Software Developer</h3>
+                            <h4>Jacobs, Navi Mumbai, India</h4>
+                            <div class="experience-description">
+                                <p>At Jacobs, I've been focused on building impactful web applications that enhance user experiences. I developed a Vue.js single-page application that resulted in a 24% increase in user logins and significant download growth in just three months. The application featured enhanced security and authentication for better user experience.</p>
+                                
+                                <p>I've improved development workflows by implementing Webpack and Babel for module bundling and code transpilation, which reduced deployment times by 25%. One of my key achievements was engineering and deploying a high-impact application using Mendix, completing the development in two months and successfully deploying to production within a week.</p>
+                                
+                                <p>My role includes providing development support across multiple enterprise applications built with .NET and JavaScript, troubleshooting production issues to ensure minimal downtime, and collaborating with cross-functional teams to implement new features and fix bugs. I also regularly perform code reviews and have optimized database queries in SQL Server to improve application efficiency.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ./experience -->
+    
+    <!-- projects -->
+      <div class="section" id="projects" style="margin-top: -80px;"> 
+      <section class="section project" aria-labelledby="project-label">
+        <div class="container">
+
+          <div class="title-wrapper" data-reveal="top">
+
+            <div>
+              <h4>04</h4>
+              <h1 class="size-50">Projects</h1>
+
+            <!---  <p class="section-text">
+                Check out some of my latest projects with creative ideas.
+              </p>  -->
+
+            </div> 
+
+            <a href="#" class="btn btn-secondary">See All Projects</a>
+
+          </div>
+          
+          <div class="project-filter-container" data-reveal="top">
+            <div class="project-filter">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="webapp">Web Application</button>
+              <button class="filter-btn" data-filter="uidesign">UI/UX Design</button>
+            </div>
+          </div>
+
+          <ul class="grid-list">
+
+            <li class="project-item" data-category="uidesign">
+              <div class="project-card project-card-1" style="background-color: #f8f5fb">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class="card-tag" style="color: #a07cc5">Mobile Design</p>
+
+                  <h3 class="h3 card-title">Kids Clothing App</h3>
+
+                  <p class="card-text">
+                    This case study focuses on the development and implementation of a kids clothing app, which aims to provide a convenient and user-friendly platform for parents to browse and purchase clothing items for their children. The app is designed to cater specifically to the needs of parents, offering a wide range of clothing options for different age groups, styles, and occasions.
+                  </p>
+
+                  <a href="https://medium.com/@Riddhi_Chavan/onekids-dc1c7258c6c6" class="btn-text" style="color: #a07cc5">
+                    <span class="span">View the Case Study</span>
+                   
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/project-1.png" width="650" height="370" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <li class="project-item" data-category="webapp">
+              <div class="project-card project-card-1" style="background-color: #f5f9fb">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class="card-tag" style="color: #4285f4">Web Application</p>
+
+                  <h3 class="h3 card-title">Stock News Tracker</h3>
+
+                  <p class="card-text">
+                    Developed a full-stack web application for aggregating and displaying real-time stock market news and data. Built responsive UI with Next.js and Tailwind CSS for seamless desktop and mobile user experience. Implemented Python backend services for processing financial data from multiple API sources.
+                  </p>
+
+                  <a href="http://ridzl11.pythonanywhere.com" class="btn-text" style="color: #4285f4">
+                    <span class="span">View Project</span>
+                   
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/project-2.png" width="650" height="370" loading="lazy" alt="Stock News Tracker"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <li class="project-item" style="grid-column: 1 / 3;" data-category="webapp">
+              <div class="project-card project-card-1" style="background-color: #fbf5f5">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class="card-tag" style="color: #ea4335">Web Application</p>
+
+                  <h3 class="h3 card-title">IndiWheels</h3>
+
+                  <p class="card-text">
+                    Developed a comprehensive Indian automobile showcase platform featuring detailed information on domestic car models and manufacturers. Implemented 3D visualization using Three.js with optimized GLB models, enabling interactive 360° viewing of vehicles with 40% faster loading times.
+                  </p>
+
+                  <a href="https://riddhisc.github.io/IndiWheels" class="btn-text" style="color: #ea4335">
+                    <span class="span">View Project</span>
+                   
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/project-3.png" width="650" height="370" loading="lazy" alt="IndiWheels"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </div>
+    <!-- ./projects -->
+
+    <!-- Contact -->
+    <div class="section" id="contact" style="margin-top: -50px;">
+        <div class="container">
+            <div class="col-md-12">
+                <h4>05</h4>
+                <h1 class="size-50">Contact Me</h1>
+                <div class="h-50"></div>
+            </div>
+            <div class="col-md-8">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="ion-ios-email"></i>
+                        <a href="mailto:riddhi.chavan.com" class="contact-link">riddhi.chavan.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="ion-ios-telephone"></i>
+                        <a href="tel:8169563964" class="contact-link">8169563964</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="ion-social-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/riddhichavan7/" target="_blank" class="contact-link">linkedin.com/in/riddhichavan7</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="ion-social-github"></i>
+                        <a href="https://github.com/riddhisc" target="_blank" class="contact-link">github.com/riddhisc</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!-- Resume download box removed as requested -->
+            </div>
+            <div class="col-md-12">
+                <div class="h-50"></div>
+                <p>Feel free to reach out to me for any frontend development opportunities, collaborations, or just to say hello!</p>
+            </div>
+        </div>
+    </div>
+    <!-- ./Contact -->
+
+
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!--  plugins  -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+
+
+     <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Back to top button -->
+  <a href="#" id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+
+    <!--  main script  -->
+    <script src="js/custom.js"></script>
+    
+    <script>
+        // Optimize scroll performance
+        let scrollTimeout;
+        window.addEventListener('scroll', function() {
+            if (!scrollTimeout) {
+                scrollTimeout = setTimeout(function() {
+                    scrollTimeout = null;
+                    // Update scroll progress bar
+                    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                    const scrolled = (winScroll / height) * 100;
+                    document.getElementById('scrollProgressBar').style.width = scrolled + '%';
+                }, 10);
+            }
+        });
+        
+        // Ensure all section transitions are smooth
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.transition = 'opacity 0.5s ease';
+        });
+    </script>
+</body>
+
+</html>
